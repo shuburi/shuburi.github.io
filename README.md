@@ -1,6 +1,5 @@
 # shuburi.org
 
-A web site for shuburi. URL is [shuburi.org][shuburi] / [shuburi.github.io][shuburi-gh-pages].
+A web site for shuburi. The URL is [shuburi.org][shuburi].
 
 [shuburi]: http://shuburi.org
-[shuburi-gh-pages]: http://shuburi.github.io
