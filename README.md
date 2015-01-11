@@ -2,6 +2,10 @@
 
 A web site for shuburi. The URL is [shuburi.org][shuburi].
 
+## Wiki
+
+[Wiki](https://github.com/shuburi/shuburi.github.io/wiki)
+
 ## Contribution
 
 1. Fork it ( http://github.com/shuburi/shuburi.github.io/fork )
