@@ -1,4 +1,5 @@
 [
   { "week": "2015-W01", "user": "bouzuya", "repo": "hspd-api" },
-  { "week": "2015-W02", "user": "bouzuya", "repo": "hspd-app" }
+  { "week": "2015-W02", "user": "bouzuya", "repo": "hspd-app" },
+  { "week": "2015-W03", "user": "bouzuya", "repo": "hspd-bootstrap" }
 ]
