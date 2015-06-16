@@ -3,39 +3,136 @@
 <head>
   <meta charset="utf-8">
   <title>週ぶり (shuburi) </title>
+  <style>
+  /* reset */
+  html, body, ul, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  /* other */
+
+  a {
+    color: #11BBDD;
+  }
+
+  body {
+    color: #333333;
+  }
+
+  section h1 {
+    border-bottom: 1px solid #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.2rem 0;
+  }
+
+  section section h1 {
+    font-size: 1.2rem;
+    border-bottom: none;
+  }
+
+  .root-header,
+  .root-body {
+    margin: 3rem auto;
+    width: 960px;
+  }
+
+  .site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1.2rem 0;
+  }
+
+  .site-title-anchor {
+    color: #333333;
+  }
+
+  .about,
+  .pros-and-cons,
+  .links {
+    margin-bottom: 2rem;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="http://shuburi.org">週ぶり (shuburi) </a></h1>
-  <p><a href="http://shuburi.org">shuburi.org</a> は週ぶり (shuburi) の公式サイトです。</a></p>
-  <h1>週ぶり (shuburi) とは</h1>
-  <p>「週 (shu) 」 + 「素振り (suburi) 」 = 「週ぶり (shuburi) 」</p>
-  <p>1 週間ごとに素振りをして成果を公開する取り組みです。</p>
-  <h1>週ぶり (shuburi) の Pros / Cons</h1>
-  <h2>週ぶり (shuburi) の Pros</h2>
-  <ul>
-    <li>定期的である : 1 週間ごとに定めることで、練習を習慣づけることができる。不定期に開催されるイベントはいつか失われる。</li>
-    <li>有納期である : 1 週間という期間(納期)を定めることで、成果の公開を習慣づけることができる。だらだらと公開されないサービスは無価値である。</li>
-    <li>練習である : 失敗が許されることで、自由な挑戦が可能である。失敗が許されない環境では誰もチャレンジしない。</li>
-    <li>公開する : 公開を必須にすることで、外部からの評価が可能である。外部からの評価は最大のモチベーションになり得る。</li>
-  </ul>
-  <h2>週ぶり (shuburi) の Cons</h2>
-  <ul>
-    <li>定期的である : 1 週間ごとに定められることで、自分のタイミングではじめることができない。往々にしてそのタイミングは二度と来ない。</li>
-    <li>有納期である : 1 週間という期間(納期)を定めることで、規模の限界ができる。その対象は大きすぎないか、プロトタイプをそのまま業務で使うべきだろうか。</li>
-    <li>練習である : 失敗が許されることで、甘えが生じる。多くの人間にとって最初から本番は厳しいものだ。</li>
-    <li>公開する : 公開を必須にすることで、中途半端なものがつくれなくなる。中途半端の線引きに迷って公開できなくなる、中途半端かどうかは相手が決める、まず公開せよ。</li>
-  </ul>
-  <h1>リンク</h1>
-  <ul>
-    <li>Wiki&nbsp;&nbsp;: <a href="https://github.com/shuburi/shuburi.github.io/wiki">shuburi/shuburi.github.io/wiki</a></li>
-    <li>Twitter Hashtag: <a href="https://twitter.com/hashtag/shuburi">#shuburi</a></li>
-    <li>GitHub: <a href="https://github.com/shuburi/shuburi.github.io">shuburi/shuburi.github.io</a></li>
-    <li>Twitter: <a href="https://twitter.com/shuburi">@shuburi</a></li>
-    <li>Gitter: <a href="https://gitter.im/shuburi/shuburi.github.io">gitter.im/shuburi/shuburi.github.io</a></li>
-    <li>shuburi.org の改善要求(推奨フロー): <a href="https://gist.github.com/bouzuya/825e7c07097875b97a3e">https://gist.github.com/bouzuya/825e7c07097875b97a3e</a></li>
-    <li>shuburi.org の問題登録: <a href="https://github.com/shuburi/shuburi.github.io/issues/new">https://github.com/shuburi/shuburi.github.io/issues/new</a></li>
-    <li>初期コンセプト: <a href="https://gist.github.com/bouzuya/2fb3383dc1e447f98eba/f63dedd513ed6812c12f70025f3ea3ed57553bd5">https://gist.github.com/bouzuya/2fb3383dc1e447f98eba/f63dedd513ed6812c12f70025f3ea3ed57553bd5</a></li>
-    <li>bouzuya 版週ぶり (bouzuya's shuburi): <a href="https://gist.github.com/bouzuya/2fb3383dc1e447f98eba">https://gist.github.com/bouzuya/2fb3383dc1e447f98eba</a></li>
-  </ul>
+  <header class="root-header">
+    <h1 class="site-title">
+      <a
+        class="site-title-anchor"
+        href="http://shuburi.org"
+        >
+      週ぶり (shuburi) </a>
+    </h1>
+    <p class="site-description"><a href="http://shuburi.org">shuburi.org</a> は週ぶり (shuburi) の公式サイトです。</a></p>
+  </header>
+  <div class="root-body">
+    <section class="about">
+      <header class="about-header">
+        <h1>週ぶり (shuburi) とは</h1>
+      </header>
+      <div class="about-body">
+        <p>「週 (shu) 」 + 「素振り (suburi) 」 = 「週ぶり (shuburi) 」</p>
+        <p>1 週間ごとに素振りをして成果を公開する取り組みです。</p>
+      </div>
+    </section>
+    <section class="pros-and-cons">
+      <header class="pros-and-cons-header">
+        <h1>週ぶり (shuburi) の Pros / Cons</h1>
+      </header>
+      <div class="pros-and-cons-body">
+        <section class="pros">
+          <header class="pros-header">
+            <h1>週ぶり (shuburi) の Pros</h1>
+          </header>
+          <div class="pros-body">
+            <ul>
+              <li>定期的である : 1 週間ごとに定めることで、練習を習慣づけることができる。不定期に開催されるイベントはいつか失われる。</li>
+              <li>有納期である : 1 週間という期間(納期)を定めることで、成果の公開を習慣づけることができる。だらだらと公開されないサービスは無価値である。</li>
+              <li>練習である : 失敗が許されることで、自由な挑戦が可能である。失敗が許されない環境では誰もチャレンジしない。</li>
+              <li>公開する : 公開を必須にすることで、外部からの評価が可能である。外部からの評価は最大のモチベーションになり得る。</li>
+            </ul>
+          </div>
+        </section>
+        <section class="cons">
+          <header class="cons-header">
+            <h1>週ぶり (shuburi) の Cons</h1>
+          </header>
+          <div class="cons-body">
+            <ul>
+              <li>定期的である : 1 週間ごとに定められることで、自分のタイミングではじめることができない。往々にしてそのタイミングは二度と来ない。</li>
+              <li>有納期である : 1 週間という期間(納期)を定めることで、規模の限界ができる。その対象は大きすぎないか、プロトタイプをそのまま業務で使うべきだろうか。</li>
+              <li>練習である : 失敗が許されることで、甘えが生じる。多くの人間にとって最初から本番は厳しいものだ。</li>
+              <li>公開する : 公開を必須にすることで、中途半端なものがつくれなくなる。中途半端の線引きに迷って公開できなくなる、中途半端かどうかは相手が決める、まず公開せよ。</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="links">
+      <header>
+        <h1>リンク</h1>
+      </header>
+      <div>
+        <ul>
+          <li>Wiki&nbsp;&nbsp;: <a href="https://github.com/shuburi/shuburi.github.io/wiki">shuburi/shuburi.github.io/wiki</a></li>
+          <li>Twitter Hashtag: <a href="https://twitter.com/hashtag/shuburi">#shuburi</a></li>
+          <li>GitHub: <a href="https://github.com/shuburi/shuburi.github.io">shuburi/shuburi.github.io</a></li>
+          <li>Twitter: <a href="https://twitter.com/shuburi">@shuburi</a></li>
+          <li>Gitter: <a href="https://gitter.im/shuburi/shuburi.github.io">gitter.im/shuburi/shuburi.github.io</a></li>
+          <li>shuburi.org の改善要求(推奨フロー): <a href="https://gist.github.com/bouzuya/825e7c07097875b97a3e">https://gist.github.com/bouzuya/825e7c07097875b97a3e</a></li>
+          <li>shuburi.org の問題登録: <a href="https://github.com/shuburi/shuburi.github.io/issues/new">https://github.com/shuburi/shuburi.github.io/issues/new</a></li>
+          <li>初期コンセプト: <a href="https://gist.github.com/bouzuya/2fb3383dc1e447f98eba/f63dedd513ed6812c12f70025f3ea3ed57553bd5">https://gist.github.com/bouzuya/2fb3383dc1e447f98eba/f63dedd513ed6812c12f70025f3ea3ed57553bd5</a></li>
+          <li>bouzuya 版週ぶり (bouzuya's shuburi): <a href="https://gist.github.com/bouzuya/2fb3383dc1e447f98eba">https://gist.github.com/bouzuya/2fb3383dc1e447f98eba</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
